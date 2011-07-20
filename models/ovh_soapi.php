@@ -146,7 +146,7 @@ class OvhSoapi extends AppModel {
 
 		try {
 			$result = $this->client->__soapCall($name, $params);
-		} catch (Exception $e) {
+		} catch (Exception $fault) {
 
 			$this->error = $fault->faultstring;
 			$this->showError();
