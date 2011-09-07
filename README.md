@@ -5,7 +5,7 @@ Inspired of CakePHP SOAP datasource : https://github.com/cakephp/datasources/blo
 ## Usage :
 
 ```php
-App::import('Model','OvhSoapi.OvhSoapi');
+App::uses('OvhSoapi', 'OvhSoapi.Model');
 $this->Soapi = new OvhSoapi(
     'login' => 'xxxxxx-ovh',
     'password' => '******'
