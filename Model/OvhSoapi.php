@@ -194,7 +194,7 @@ class OvhSoapi extends AppModel {
  */
 	public function showError($result = null) {
 
-		if (Configure::read() > 0) {
+		if (Configure::read('debug') > 0) {
 			if ($this->error) {
 				trigger_error('<span style = "color:Red;text-align:left"><b>SOAP Error:</b> ' . $this->error . '</span>', E_USER_WARNING);
 			}
