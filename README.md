@@ -6,11 +6,11 @@ Inspired of CakePHP SOAP datasource : https://github.com/cakephp/datasources/blo
 
 ```php
 App::import('Model','OvhSoapi.OvhSoapi');
-$this->Soapi = new OvhSoapi(
+$this->Soapi = new OvhSoapi(array(
     'login' => 'xxxxxx-ovh',
-    'password' => '******'
+    'password' => '******',
     'location' => 'fr'
-);
+));
 
 $servers = $this->Soapi->query('dedicatedList');
 ```
